@@ -1,6 +1,6 @@
 # services:
     dev:
-        image: dev-laravel-php5-apache2-d8
+        image: dev-laravel-php7-d9
         command: /cmd/start-dev.sh
         volumes:
             - './app:/home/dev/ws'
