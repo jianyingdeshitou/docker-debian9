@@ -1,0 +1,9 @@
+" vim-laravel
+Bundle 'tpope/vim-dispatch'
+Bundle 'tpope/vim-projectionist'
+Bundle 'noahfrederick/vim-composer'
+Bundle 'noahfrederick/vim-laravel'
+
+" vim-blade
+Bundle 'jwalton512/vim-blade'
+
