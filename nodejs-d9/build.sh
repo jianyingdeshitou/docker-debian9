@@ -1,2 +1,2 @@
 #!/bin/sh
-docker build -t php7-d9 .
+docker build -t nodejs-d9 .
