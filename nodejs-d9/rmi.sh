@@ -1,2 +1,2 @@
 #!/bin/sh
-docker rmi php7-d9
+docker rmi nodejs-d9

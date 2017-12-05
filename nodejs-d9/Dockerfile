@@ -1,4 +1,4 @@
-FROM node:8
+FROM node:8-stretch
 
 MAINTAINER 坚硬的石头 <do_nb@outlook.com>
 

@@ -2,10 +2,10 @@ FROM apache2-d9
 
 MAINTAINER 坚硬的石头 <do_nb@outlook.com>
 
-RUN apt-get update && \
-        apt-get install -y php7.0 php7.0-mysql php7.0-cli php7.0-curl php7.0-gd \ 
-            php7.0-mbstring php7.0-mcrypt php7.0-opcache && \
-        rm -rf /var/lib/apt/lists/*
+RUN apt-get update \
+    && apt-get install -y php7.0 php7.0-mysql php7.0-cli php7.0-curl php7.0-gd \
+	&& php7.0-mbstring php7.0-mcrypt php7.0-opcache \
+	&& rm -rf /var/lib/apt/lists/*
 
 ENV PATH "/composer/vendor/bin:$PATH"
 ENV COMPOSER_ALLOW_SUPERUSER 1

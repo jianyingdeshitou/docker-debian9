@@ -1,2 +1,2 @@
 #!/bin/sh
-docker tag php7-d9 php7-d9:`date +%Y%m%d`
+docker tag nodejs-d9 nodejs-d9:`date +%Y%m%d`

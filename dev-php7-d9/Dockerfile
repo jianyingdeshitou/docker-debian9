@@ -6,3 +6,5 @@ RUN apt-get update \
     && apt-get install -y php7.0-dev php7.0-xdebug \
     && rm -rf /var/lib/apt/lists/*
 
+VOLUME /app
+WORKDIR /app
