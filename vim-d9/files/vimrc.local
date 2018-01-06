@@ -1,0 +1,9 @@
+set wrap
+set t_Co=256
+set mouse-=a
+set nospell
+
+inoremap <expr><CR> neosnippet#expandable() ? neosnippet#mappings#expand_or_jump_impl() : pumvisible() ? neocomplete#close_popup() : "\<CR>"
+
+nnoremap H :bp<cr>
+nnoremap L :bn<cr>
