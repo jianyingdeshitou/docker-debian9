@@ -13,7 +13,9 @@ ENV PATH "/composer/vendor/bin:$PATH"
 ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV COMPOSER_HOME /composer
 
-RUN curl -sS https://getcomposer.org/installer | php \
+#RUN curl -sS https://getcomposer.org/installer | php \
+RUN wget https://install.phpcomposer.com/composer.phar \
+    && chmod a+x composer.phar \
     && mv composer.phar /usr/local/bin/composer 
 RUN composer config -g repo.packagist composer https://packagist.phpcomposer.com
 
