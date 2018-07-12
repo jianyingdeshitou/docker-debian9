@@ -8,7 +8,7 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - \
    && apt-get install -y nodejs \
     # && apt-get install -y nodejs node-npm-run-path \
     && rm -rf /var/lib/apt/lists/* \
-    && npm install -g gulp webpack bower
+    && npm install -g gulp webpack bower yarn
 
 # 修复问题： gulp-notify: [Error in notifier]
 # RUN apt-get update \
